@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+/*---Header---*/
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+}
+
+header img#logo{
+    width: 200px;
+}
+
+header div.encabezado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(18, 11, 76);;
+}
+
+header#barra{
+    color:  #666;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header#tarjeta{
+    margin: 20px;
+}
+.burger-menu{
+    width: 30px;
+    background-color:  #03264C;
+    color:  #ebebeb;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+header nav{
+    display: none;
+}
+
+/*---Main---*/
+main{
+    width: 100vw;
+    background-color: rgb(190, 188, 188);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section{
+    width: 90%;
+    font-size: 12px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+   }
+
+main section div.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main article{
+    max-width: 200px;
+    margin: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 20px;
+    background-color: white;
+    background-position: left;
+}
+
+main article img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+ main article i{
+    color: #39b54a;
+    font-size: 2em; 
+    margin: 10px 0px;
+}
+
+main.detalles{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    border-left: 15px;
+    border-right: 15px;
+}
+
+.titulo{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion{
+    font-size: 16px;
+}
+
+/*Footer**/
+footer{
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+}
+
+
+
+footer i{
+    font-size: 2em; 
+    margin: 10px 0px;
+    color:  #1259c3;
+}
+
+#piedepagina{
+    text-align: left
+}
+
+/* Formulario **/
+.form{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuerpo{
+    font-size: 18px;
+    width: 90vw;
+    padding: 50px;
+}
+
+main input{
+    padding: 5px 10px;
+    border: 3px solid transparent;
+    outline: none;
+    transition: border 2s;
+}
+
+input:focus{
+    border: 3px solid rgb(131, 150, 201);
+}
+
+main button{
+    color: white;
+    background-color: blue;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+
+/*___Tablet___*/
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }  
+    header nav{
+        display:contents;
+    }
+}
+/*____Desktop____*/
+@media (min-width: 1020px){
+    .burger-menu{
+        display: none;
+    } 
+    header nav{
+        display: contents;
+    }
+}
