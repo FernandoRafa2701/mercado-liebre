@@ -4,7 +4,7 @@ const path = require('path')
 
 app.use(express.static('public'));
 
-const port = 5000;
+const port = 3030;
 
 app.listen(port, () => console.log('Server up: ' + port) );
 
